@@ -385,6 +385,29 @@ padding-bottom: 120px;
     .banner-container{
         gap: 5px;
     }
+    .games-image-container{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* .play-instant-container{
+        flex-direction: column-reverse;
+        gap: 10px;
+        
+    }
+    .play-instant-img{
+        width: 100%;
+    }
+    .play-instant-content{
+        width: 100%;
+    }
+    .image{
+        width: 70%;
+    }
+    .small-image{
+        width: 200px;
+        height: 150px;
+    } */
     /* .games-image-container{
         text-align: center;
     }
