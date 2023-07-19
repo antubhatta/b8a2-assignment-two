@@ -117,6 +117,7 @@ padding: 15px 25px;
 }
 .banner-img{
     margin-top: 19px;
+    width: 50%;
 }
 .kids-img{
     width: 100%;
@@ -374,7 +375,17 @@ padding-bottom: 120px;
         flex-direction: column-reverse;
         
     }
-    .games-image-container{
+    .banner-img{
+        width: 100%;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-container{
+        gap: 5px;
+    }
+    /* .games-image-container{
         text-align: center;
     }
     .play-instant-container{
@@ -383,7 +394,7 @@ padding-bottom: 120px;
     }
     .play-instant-content{
         text-align: center;
-    }
+    } */
     
 }
 /* responsive style for medium device /tablet */
@@ -391,6 +402,9 @@ padding-bottom: 120px;
 
     .nav-container{
         flex-direction: column;
+    }
+    .nav-container{
+        margin-top: 0;
     }
     .nav-class{
         background: none;
