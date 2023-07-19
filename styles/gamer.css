@@ -5,6 +5,12 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.funny-videos, .online{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+ -webkit-background-clip: text;
+
+}
 /* header related section start */
 
 /* nav-bar related section */
@@ -61,7 +67,9 @@ font-weight: 500;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    gap:374px;
+    justify-content: center;
+    align-items: center;
 }
 .banner-title{
     color: #0B0223;
@@ -110,49 +118,46 @@ padding: 15px 25px;
 .banner-img{
     margin-top: 19px;
 }
-.banner-class{
+.kids-img{
+    width: 100%;
+}
+
+/* .banner-class{
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position:top left;
+    image-size: 100%;
     
    
-}
+} */
 
 
 
 /* header related section end */
 
 /* main related section start */
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
+
 /* online-games funny videos section */
 .games-content{
-    margin-top: 120px;
+    text-align: center;
 }
 .games-title{
     color: #0B0223;
 font-size: 3rem;
 font-weight: 700;
-text-align: center;
 }
-.funny-videos{
-    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    color: transparent;
- -webkit-background-clip: text;
 
-}
 .games-desc{
     color: #534C64;
 font-size: 1.2rem;
 font-weight: 400;
-text-align: center;
 }
 .games-image-container{
     margin-top: 45px;
     display: flex;
     gap: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .games-image-desc{
     color: #534C64;
@@ -162,6 +167,88 @@ font-weight: 500;
 .games-image{
     border-radius: 16px;
 }
+.hide{
+    display: none;
+}
+/* .games-img img{
+    width: 100%;
+} */
+/* play instant section */
+.play-instant-container{
+    display: flex;
+   gap: 260px;
+   align-items: center;
+   max-width: 1440px;
+    margin: 0 auto;
+   
+}
+
+ .play-instant-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.play-instantly{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+color: transparent;
+-webkit-background-clip: text;
+}
+
+.play-instant-desc{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+.play-instant-img{
+    margin-top: 120px;
+}
+.image{
+    border-radius: 8px;
+}
+.small-image{
+    text-align: right;
+    border-radius: 8px;
+border: 10px solid #FFF;
+margin-top: -258px;
+margin-right: -148px;
+margin-bottom: 120px;
+}
+/* Games icon container */
+.games-icon-container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.games-icon-content{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-radius: 50px;
+background: #FFF;
+}
+.games-icon-title{
+    color: #0B0223;
+font-size: 20px;
+font-weight: 600;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-right: 20px;
+}
+.games-icon-class{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding-top: 120px;
+}
+.games-icon-content img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.games-icon-content .games-icon-title:hover{
+    color: #F948B2;
+} 
 /* main related section end */
 
 /* footer related section start */
@@ -170,17 +257,35 @@ font-weight: 500;
 /* responsive style for mobile device */
 @media screen and (max-width:576px){
     .nav-container,
-    .item-container{
+    .item-container,
+    .games-image-container{
         flex-direction: column;
+    }
+    .nav-class{
+        background: none;
+        box-shadow: none;
     }
     .banner-container{
         flex-direction: column-reverse;
+        
     }
-
+    .games-image-container{
+        text-align: center;
+    }
+    
 }
 /* responsive style for medium device /tablet */
 @media screen and (min-width:576px) and (max-width:992px){
+
     .nav-container{
         flex-direction: column;
+    }
+    .nav-class{
+        background: none;
+        box-shadow: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        
     }
 }
